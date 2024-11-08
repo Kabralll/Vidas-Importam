@@ -234,7 +234,6 @@ ul li a {
     }
     .container p {
         overflow: auto;
-        /* que controla como o conteúdo que excede os limites de um container é tratado.Quando essa propriedade é definida qualquer conteúdo que ultrapassa a borda do container será ocultado e não ficará visível. */
     }
     #menu a {
         font-size: 4vw;
