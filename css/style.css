@@ -136,47 +136,7 @@ ul li a {
         font-size: xx-small;
     }
 } */
-@media screen and (max-width: 520px) {
-    #details ul li a{
-        display: flex;
-        padding-right: 9px;
-        font-size: small;
-    }    
-    #busca {
-        width: 60vw;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .container p {
-        overflow: auto;
-        /* que controla como o conteúdo que excede os limites de um container é tratado.Quando essa propriedade é definida qualquer conteúdo que ultrapassa a borda do container será ocultado e não ficará visível. */
-    }
-    #menu a {
-        font-size: 4vw;
-    }
-    #menu:hover {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: rgb(68, 171, 219);
-        transition: 1s;
-        width: 575px;
-    }
-    #Doencas {
-        margin-left: 30px;
-        margin-right: 35px;
-    }
-    .text{
-        width: 95%;
-    }
-    .curiosidades{
-        display: none;
-    }   
-}
+
 .container {
     display: flex;
     justify-content: center;
