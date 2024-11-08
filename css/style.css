@@ -218,7 +218,7 @@ ul li a {
 .PW1{
     margin-right: 1rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #details ul li a{
         display: flex;
         padding-right: 9px;
