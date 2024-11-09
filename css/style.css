@@ -250,7 +250,7 @@ ul li a {
         height: 80px;
     }
     #Doencas {
-        margin-left: 5.5%;
+        margin-left: 8%;
         margin-right: 1%;
     }
     .text{
@@ -259,5 +259,9 @@ ul li a {
     }
     .curiosidades{
         display: none;
+    }
+    #cvv {
+        padding: 2%;
+        font-size: 130%;
     }
 }
