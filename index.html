@@ -1,108 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
-    <link rel="icon" href="img/heart.jpg" type="image/icon type">
-    <title>Vidas Importam</title>
-</head>
-<body>
-    <header class="cabecalho">
-            <h1 id="logo">Vidas Importam</h1>
-            <div class="pesquisa">
-                <input type="text" id="busca" placeholder="Busque um tema" maxlength="20" ><i id="icones" class='bx bx-search-alt-2' ></i> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+        <link rel="icon" href="img/heart.jpg" type="image/icon type">
+        <title>Vidas Importam</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+                <h1 id="logo">Vidas Importam</h1>
+                <div class="pesquisa">
+                    <input type="text" id="busca" placeholder="Busque um tema" maxlength="20" ><i id="icones" class='bx bx-search-alt-2' ></i> 
+                </div>
+                <a id="login" href="login_forms.html">
+                    Fazer Login
+                    <i id="icones" class='bx bxs-user'></i>
+                </a>
+                <a href="index.html">
+                    <img  id="home_button" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASFJREFUSEvt1b8uBUEUx/HPjUQ0KoUHkIigUUmEhIKotBqegAfwBqLnCeg0CqU/BZGoNEIUHkChEh3hbrKbjHHX7O51GzHlmXN+33NOfpNp6fFp9VhfHcAwLvKG5vBUpbmqgEFcYTIXvcUMXlKQKoB+nGI2ErvEAt5+gqQA2f0RVkpEDrGKjzJICrCLjcQa9rDZBLCF7dSO8/ssd6dTbtkEa9ivKF6kreMgrukEWMYx+moC3ttOW8JZWBcDpnI7DtQUL9Jf247L3shNEQgBI7jGUEPxouwZ03jMAiHgAaNdihfld5iIAfcY+yVApjUeA0Lt0oeTaOCbacps+jcB8bSdpuxqRf+ALwY8x3wQOcFiZNEqObX+5EZvMPXhNBINiz4Bp0ktGQo11VEAAAAASUVORK5CYII="/>
+                </a>
+            <div class="barra">
+                <!-- <details id="details">
+                    <summary id="summary">Doenças:</summary>
+                    <ul>
+                        <li><a id="algumas_doencas" href="#">Depressão</a></li>
+                        <li><a id="algumas_doencas" href="#">Ansiedade</a></li>
+                        <li><a id="algumas_doencas" href="#">Borderline</a></li>
+                        <li><a id="algumas_doencas" href="#">TDAH</a></li>
+                        <li><a id="algumas_doencas" href="#">Crise de Pânico</a></li> 
+                    </ul>
+                </details> -->
+                <ul id="menu">
+                    <li id="Doencas"><a>Doenças</a></li>
+                    <li><a id="links" href="#">Depressão</a></li>
+                    <li><a id="links" href="#">Ansiedade</a></li>
+                    <li><a id="links" href="#">Borderline</a></li>
+                    <li><a id="links" href="#">TDAH</a></li>
+                    <li><a id="links" href="#">Crise de Pânico</a></li> 
+                </ul>            
+                <a id="cvv" href="https://cvv.org.br/" target="_blank">Centro de Valorição à Vida</a>
+                <a id="quem_somos" href="quem_somos.html">Quem Somos?</a>
             </div>
-            <a id="login" href="login_forms.html">
-                Fazer Login
-                <i id="icones" class='bx bxs-user'></i>
-            </a>
-            <a href="index.html">
-                <img  id="home_button" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASFJREFUSEvt1b8uBUEUx/HPjUQ0KoUHkIigUUmEhIKotBqegAfwBqLnCeg0CqU/BZGoNEIUHkChEh3hbrKbjHHX7O51GzHlmXN+33NOfpNp6fFp9VhfHcAwLvKG5vBUpbmqgEFcYTIXvcUMXlKQKoB+nGI2ErvEAt5+gqQA2f0RVkpEDrGKjzJICrCLjcQa9rDZBLCF7dSO8/ssd6dTbtkEa9ivKF6kreMgrukEWMYx+moC3ttOW8JZWBcDpnI7DtQUL9Jf247L3shNEQgBI7jGUEPxouwZ03jMAiHgAaNdihfld5iIAfcY+yVApjUeA0Lt0oeTaOCbacps+jcB8bSdpuxqRf+ALwY8x3wQOcFiZNEqObX+5EZvMPXhNBINiz4Bp0ktGQo11VEAAAAASUVORK5CYII="/>
-            </a>
-        <div class="barra">
-            <!-- <details id="details">
-                <summary id="summary">Doenças:</summary>
-                <ul>
-                    <li><a id="algumas_doencas" href="#">Depressão</a></li>
-                    <li><a id="algumas_doencas" href="#">Ansiedade</a></li>
-                    <li><a id="algumas_doencas" href="#">Borderline</a></li>
-                    <li><a id="algumas_doencas" href="#">TDAH</a></li>
-                    <li><a id="algumas_doencas" href="#">Crise de Pânico</a></li> 
-                </ul>
-            </details> -->
-            <ul id="menu">
-                <li id="Doencas"><a>Doenças</a></li>
-                <li><a id="links" href="#">Depressão</a></li>
-                <li><a id="links" href="#">Ansiedade</a></li>
-                <li><a id="links" href="#">Borderline</a></li>
-                <li><a id="links" href="#">TDAH</a></li>
-                <li><a id="links" href="#">Crise de Pânico</a></li> 
-            </ul>            
-            <a id="cvv" href="https://cvv.org.br/" target="_blank">Centro de Valorição à Vida</a>
-        </div>
-    </header>
-    <section class="container">
-        <div class="text" >
-            <h1 style="font-size: xx-large;">Nosso Objetivo</h1>
-            <p>&nbsp;&nbsp;A saúde mental ainda é um assunto carente de atenção, mesmo nos dias de hoje muita desinformação é passada sobre o assunto e pessoas acabam criando falsos estigmas sobre tal. Pensando nisso, o objetivo do Vidas Importam é passar informações segundo especialistas, tanto sucintas para leigos quanto informações aprofundadas para entusiastas e acadêmicos.</p>
-            <h1 style="font-size: xx-large;">Dados do Brasil</h1>
-            <p>&nbsp;&nbsp;<a href="https://www.healthdata.org/research-analysis/health-risks-issues/mental-health">Segundo dados do Institute for Health Metrics and Evaluation (IHME)</a>, em 2021 o Brasil foi o país com a maior quantidade de casos de transtornos mentais na América, o que representa 18.411 casos a cada 100.000 pessoas. <a href="https://data.who.int/indicators/i/F08B4FD/16BBF41?m49=076">Segundo a Organização Mundial da Saúde(OMS)</a>, os casos de suicídio vem em constante crescimento nos últimos anos. </p><br>
+        </header>
         
-            <div class="tabela">
-                <table width="80%" border="0" cellspacing="0" cellpadding="5" bgcolor="skyblue">
-                        <td colspan="2" align="center">
-                        <span style="color:black; font-size:200%">Taxas de suicídio no Brasil</td>
-                    </tr>
-                    <tr bgcolor= "#87CEEB">
-                        <td align="center"><b>Ano</b></td>
-                        <td align="center"><b>Indice de suicídio a cada 100.000 pessoas</b></td>
-                    </tr>
-                    <tr bgcolor="#e2e2e2">
-                        <td align="center">2014</td>
-                        <td align="center">5,6</td>
-                    </tr>
-                    <tr bgcolor="#87CEEB">
-                        <td align="center">2015</td>
-                        <td align="center">5,9</td>
-                    </tr>
-                    <tr bgcolor="#e2e2e2">
-                        <td align="center">2016</td>
-                        <td align="center">6,0</td>
-                    </tr>
-                    <tr bgcolor="#87CEEB">
-                        <td align="center">2017</td>
-                        <td align="center">6,6</td>
-                    </tr>       
-                    <tr bgcolor="#e2e2e2">
-                        <td align="center">2018</td>
-                        <td align="center">7,0</td>
-                    </tr>      
-                    <tr bgcolor="#87CEEB">
-                        <td align="center">2019</td>
-                        <td align="center">6,9</td>
-                   </tr>      
-                </table>
+        <section class="container">
+            <div class="text" >
+                <h1 style="font-size: xx-large;">Nosso Objetivo</h1>
+                <p>&nbsp;&nbsp;A saúde mental ainda é um assunto carente de atenção, mesmo nos dias de hoje muita desinformação é passada sobre o assunto e pessoas acabam criando falsos estigmas sobre tal. Pensando nisso, o objetivo do Vidas Importam é passar informações segundo especialistas, tanto sucintas para leigos quanto informações aprofundadas para entusiastas e acadêmicos.</p>
+                <h1 style="font-size: xx-large;">Dados do Brasil</h1>
+                <p>&nbsp;&nbsp;<a href="https://www.healthdata.org/research-analysis/health-risks-issues/mental-health">Segundo dados do Institute for Health Metrics and Evaluation (IHME)</a>, em 2021 o Brasil foi o país com a maior quantidade de casos de transtornos mentais na América, o que representa 18.411 casos a cada 100.000 pessoas. <a href="https://data.who.int/indicators/i/F08B4FD/16BBF41?m49=076">Segundo a Organização Mundial da Saúde(OMS)</a>, os casos de suicídio vem em constante crescimento nos últimos anos. </p><br>
+            
+                <div class="tabela">
+                    <table width="80%" border="0" cellspacing="0" cellpadding="5" bgcolor="skyblue">
+                            <td colspan="2" align="center">
+                            <span style="color:black; font-size:200%">Taxas de suicídio no Brasil</td>
+                        </tr>
+                        <tr bgcolor= "#87CEEB">
+                            <td align="center"><b>Ano</b></td>
+                            <td align="center"><b>Indice de suicídio a cada 100.000 pessoas</b></td>
+                        </tr>
+                        <tr bgcolor="#e2e2e2">
+                            <td align="center">2014</td>
+                            <td align="center">5,6</td>
+                        </tr>
+                        <tr bgcolor="#87CEEB">
+                            <td align="center">2015</td>
+                            <td align="center">5,9</td>
+                        </tr>
+                        <tr bgcolor="#e2e2e2">
+                            <td align="center">2016</td>
+                            <td align="center">6,0</td>
+                        </tr>
+                        <tr bgcolor="#87CEEB">
+                            <td align="center">2017</td>
+                            <td align="center">6,6</td>
+                        </tr>       
+                        <tr bgcolor="#e2e2e2">
+                            <td align="center">2018</td>
+                            <td align="center">7,0</td>
+                        </tr>      
+                        <tr bgcolor="#87CEEB">
+                            <td align="center">2019</td>
+                            <td align="center">6,9</td>
+                       </tr>      
+                    </table>
+                </div><br>
+
+                <h1 style="font-size: xx-large;">Objetivo ONU</h1>
+                <p>&nbsp;&nbsp;Pensando nisso, a Organização das Nações Unidas(ONU) decidiu criar Objetivos de Desenvolvimento Sustentaveis(ODS) com o objetivo de transformar o planeta em um lugar mais saudável e renovável até 2050. Uma dessas ODSs é a de Saúde e Bem-Estar que se preocupa com varios aspectos no âmbito da saúde, um deles que será abordado é a saúde mental.</p><br>
+
+                <figure class="imagens">
+                    <img src="img/ODS.gif">
+                    <p style="font-size: x-large;" id="texto_imagens" >3° ODS(Objetivos de Desenvolvimento Sustentaveis)</p> 
+                </figure><br>
+
             </div>
-            <br>
-            <h1 style="font-size: xx-large;">Objetivo ONU</h1>
-            <p>&nbsp;&nbsp;Pensando nisso, a Organização das Nações Unidas(ONU) decidiu criar Objetivos de Desenvolvimento Sustentaveis(ODS) com o objetivo de transformar o planeta em um lugar mais saudável e renovável até 2050. Uma dessas ODSs é a de Saúde e Bem-Estar que se preocupa com varios aspectos no âmbito da saúde, um deles que será abordado é a saúde mental.</p><br>
-            <figure class="imagens">
-                <img src="img/ODS.gif">
-                <p style="font-size: x-large;" id="texto_imagens" >3° ODS(Objetivos de Desenvolvimento Sustentaveis)</p>
-            </figure>
-            <br>
-        </div>
-        <div class="curiosidades">
-            <h1 style="font-size: large;">Curiosidades</h1><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi necessitatibus maiores adipisci, vitae perspiciatis amet, quos fugiat tempore aliquam omnis ipsam quisquam dolorem id placeat iusto accusamus labore eum suscipit!</p>
-        </div>        
-    </section>
-    <footer class="footer">
-            <div class="rodape">
-                <p>Todos os direitos reservados à Vidas Importam 2024</p >
-            </div>
-    </footer>
-</body>
+            
+        </section>
+
+        <footer class="footer">
+                <div class="rodape">
+                    <p>Todos os direitos reservados à Vidas Importam 2024</p >
+                </div>
+        </footer>
+    </body>
 </html>
