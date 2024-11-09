@@ -130,13 +130,20 @@ ul li a {
     font-size: 1.2rem;
     border-radius: 30px;
 }
-/*Quando chegar no width 481px ele faz alterções  */
-/* @media screen and (max-width: 400px) {
-    #menu a {
-        font-size: xx-small;
-    }
-} */
-
+#quem_somos{
+    display: flex;
+    background-color:#45acdb;
+    border-radius: 100px;
+    padding: 1vw;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+#quem_somos:hover {
+    transition: 0.6s;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -167,16 +174,6 @@ ul li a {
     font-size: 160%;
     color: gray;    
 }
-.curiosidades {
-    padding: 0 30px 30px 30px;
-    margin-left: 1.5%;
-    box-shadow: 0px 1px 4px black;
-    background-color: rgb(115, 201, 241);
-    border-radius: 10px;
-    width: 200px;
-    height: 100%;
-    display:none;
-}
 .imagens{
     display: flex;
     flex-direction: column;
@@ -184,14 +181,6 @@ ul li a {
 }
 .imagens img{
     width: 60%;
-}
-.footer {
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    background-color: rgb(68, 171, 219);
-    color: black;
-    font-size: 150%;
 }
 #menu {
     display: flex;
@@ -221,6 +210,14 @@ ul li a {
 .tabela{
     display: flex;
     justify-content: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    background-color: rgb(68, 171, 219);
+    color: black;
+    font-size: 150%;
 }
 @media screen and (max-width: 600px) {
     #details ul li a{
@@ -261,12 +258,17 @@ ul li a {
         width: 95%;
         margin-top: 4%;
     }
-    .curiosidades{
-        display: none;
-    }
     #cvv {
         padding: 2%;
         font-size: 130%;
         margin-bottom: 2.5%;
+    }
+    #quem_somos{
+        padding: 2%;
+        font-size: 130%;
+        margin-bottom: 2.5%;  
+    }
+    .footer p{
+        margin: 1%;
     }
 }
