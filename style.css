@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e2e2e2;
+    font-family: "Inter", sans-serif;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    row-gap: 20px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1%;
+    background-color: rgb(115, 201, 241);
+}
+#logo {
+    font-size: xx-large;
+}
+#busca {
+    border-radius: 15px;
+    font-size: x-large;
+    width: 50vw;
+    border: none;
+    font-family: "Inter", sans-serif;
+    text-indent: 1.5%;
+}
+.pesquisa {
+    display: flex;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+
+}
+#icones {
+    padding: .4vh;
+}
+#login {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+}
+#login:hover {
+    transition: 1s;
+    border-radius: 30px;
+    background-color:rgb(68, 171, 219) ;
+}
+#home_button{
+    margin-top: .7rem;
+    width: 1.7rem;
+}
+#home_button:hover {
+    transition: 1s;
+    border-radius: 10px;
+    background-color:rgb(68, 171, 219) ;
+}
+.barra {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    flex-basis: 100%;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(68, 171, 219);
+    width: 100px;
+    height: 50px;
+    overflow: hidden; /*Esconde as palavras do menu*/
+    border-radius: 100px;
+}
+#menu a {
+    padding-right: 11px;
+}
+#menu a:hover {
+    color: blue;
+}
+#menu:hover {
+    background-color: rgb(68, 171, 219);
+    transition: 1s;
+    width: 575px;
+}
+#Doencas {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#cvv {
+    display: flex;
+    background-color:#45acdb;
+    border-radius: 100px;
+    padding: 1.6vh;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+#cvv:hover {
+    transition: 0.6s;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+#quem_somos{
+    display: flex;
+    background-color:#45acdb;
+    border-radius: 100px;
+    padding: 1.6vh;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+#quem_somos:hover {
+    transition: 0.6s;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    box-shadow: 0px 1px 4px black;
+    background-color: rgb(115, 201, 241);
+    border-radius: 10px;
+    width: 45%;
+    height: 60%;
+}
+.text p {
+    font-size: large;
+    text-align: justify;
+
+}
+.text h1{
+    margin-top: 1%;
+}
+#texto_imagens {
+    text-align: center;
+    font-size: 120%;
+    color: gray;    
+}
+.imagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagens img{
+    width: 60%;
+    border-radius: 30px;
+}
+.tabela{
+    display: flex;
+    justify-content: center;
+}
+.rodape{
+    background-color: rgb(68, 171, 219);
+    color: white;
+    font-size: 130%;
+    text-align: center;
+}
+.img_rodape{
+    display: flex;
+    justify-content: center;
+    gap: 30px; /*Define o espaço entre os elementos da div*/
+    padding: .5%;
+}
+#text_rodape{
+    padding: 1%;
+}
+@media screen and (max-width: 600px) { 
+    #busca {
+        width: 60vw;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container p {
+        overflow: auto;
+        /* que controla como o conteúdo que excede os limites de um container é tratado.Quando essa propriedade é definida qualquer conteúdo que ultrapassa a borda do container será ocultado e não ficará visível. */
+    }
+    .barra{
+        margin-bottom: 2.5%;
+    }
+    #menu a {
+        font-size: 130%;
+    }
+    #menu:hover {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(68, 171, 219);
+        transition: 1s;
+        width: 95%;
+        height: 80px;
+    }
+    #Doencas {
+        margin-left: 8%;
+        margin-right: 1%;
+    }
+    #cvv {
+        padding: 2%;
+        font-size: 130%;
+    }
+    #quem_somos{
+        padding: 2%;
+        font-size: 130%;
+    }
+    .text{
+        width: 95%;
+        margin-top: 4%;
+    }
+    .footer p{
+        margin: 1%;
+    }
+}
