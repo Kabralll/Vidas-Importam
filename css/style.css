@@ -62,7 +62,7 @@ body {
     background-color:rgb(68, 171, 219) ;
 }
 #home_button{
-    width: 1.7rem;
+    width: 130%;
 }
 #home_button:hover {
     transition: 1s;
