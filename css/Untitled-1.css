@@ -36,11 +36,6 @@ body {
     background-color: white;
 
 }
-.pesquisa:hover {
-    background-color: rgb(68, 171, 219);
-    padding:.5vh;
-    transition: 1s;
-}
 #icones {
     padding: .4vh;
 }
