@@ -62,7 +62,6 @@ body {
     background-color:rgb(68, 171, 219) ;
 }
 #home_button{
-    margin-top: .7rem;
     width: 1.7rem;
 }
 #home_button:hover {
