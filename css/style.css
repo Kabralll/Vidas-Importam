@@ -33,19 +33,16 @@ body {
     display: flex;
     height: 40px;
     border-radius: 50px;
+    background-color: white;
 
 }
 .pesquisa:hover {
-    display: flex;
-    flex-wrap: wrap;
     background-color: rgb(68, 171, 219);
-    padding: 1vh;
+    padding: .5vh;
     transition: 1s;
 }
 #icones {
-    display: flex;
-    align-items: center;
-    font-size: x-large;
+    padding: .4vh;
 }
 #login {
     display: flex;
