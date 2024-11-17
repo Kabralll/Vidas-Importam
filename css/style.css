@@ -287,6 +287,9 @@ ul li a {
         overflow: auto;
         /* que controla como o conteúdo que excede os limites de um container é tratado.Quando essa propriedade é definida qualquer conteúdo que ultrapassa a borda do container será ocultado e não ficará visível. */
     }
+    #busca{
+        width: 60vw;
+    }
     .barra{
         margin-bottom: 2.5%;
     }
