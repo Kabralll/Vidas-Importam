@@ -38,7 +38,7 @@ body {
 }
 .pesquisa:hover {
     background-color: rgb(68, 171, 219);
-    padding: .5vh;
+    padding:.5vh;
     transition: 1s;
 }
 #icones {
@@ -83,40 +83,11 @@ ul li a {
     text-decoration: none;
     font-size: 1rem;
 }
-#summary {
-    padding: 5px;
-}
-#details{
-    display: flex;
-    align-items: center;
-    background-color: rgb(68, 171, 219);
-    padding: 1vw;
-    border-radius:20px;
-}
-#details ul {
-    display: flex;
-    flex-direction: row ;
-    align-items: center;
-}
-#details ul li {
-    display: flex;
-    flex-wrap: wrap;
-}
-#details ul li a{
-    display: flex;
-    padding-right: 10px;
-    font-size: large;
-}
-#details ul li a:hover{
-    transition: 1s;
-    text-decoration: overline;
-    color: blue;
-}
 #cvv {
     display: flex;
     background-color:#45acdb;
     border-radius: 100px;
-    padding: 1vw;
+    padding: 1.6vh;
     font-size: 1rem;
     color: black;
     text-decoration: none;
@@ -130,7 +101,7 @@ ul li a {
     display: flex;
     background-color:#45acdb;
     border-radius: 100px;
-    padding: 1vw;
+    padding: 1.6vh;
     font-size: 1rem;
     color: black;
     text-decoration: none;
