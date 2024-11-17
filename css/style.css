@@ -178,20 +178,22 @@ ul li a {
     display: flex;
     justify-content: center;
 }
-.rodape {
+.rodape{
+    background-color: rgb(68, 171, 219);
+    color: white;
+    font-size: 130%;
+    text-align: center;
+}
+.img_rodape{
     display: flex;
     justify-content: center;
-    height: 40%;
-    background-color: rgb(68, 171, 219);
-    color: black;
-    font-size: 150%;
+    gap: 30px; /*Define o espaço entre os elementos da div*/
+    padding: .5%;
 }
-@media screen and (max-width: 600px) {
-    #details ul li a{
-        display: flex;
-        padding-right: 10px;
-        font-size: small;
-    }    
+#text_rodape{
+    padding: 1%;
+}
+@media screen and (max-width: 600px) { 
     #busca {
         width: 60vw;
     }
@@ -203,6 +205,9 @@ ul li a {
     .container p {
         overflow: auto;
         /* que controla como o conteúdo que excede os limites de um container é tratado.Quando essa propriedade é definida qualquer conteúdo que ultrapassa a borda do container será ocultado e não ficará visível. */
+    }
+    .barra{
+        margin-bottom: 2.5%;
     }
     #menu a {
         font-size: 130%;
@@ -221,19 +226,17 @@ ul li a {
         margin-left: 8%;
         margin-right: 1%;
     }
-    .text{
-        width: 95%;
-        margin-top: 4%;
-    }
     #cvv {
         padding: 2%;
         font-size: 130%;
-        margin-bottom: 2.5%;
     }
     #quem_somos{
         padding: 2%;
         font-size: 130%;
-        margin-bottom: 2.5%;  
+    }
+    .text{
+        width: 95%;
+        margin-top: 4%;
     }
     .footer p{
         margin: 1%;

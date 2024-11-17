@@ -145,11 +145,11 @@ ul li a {
     justify-content: center;
     align-items:center;
     background-color:rgb(115, 201, 241);
-    margin-top: 100px;
     overflow: hidden; /*Esconde tudo que ultrapassa a div container*/
     border-radius: 20px;
     width: min-content;
-    margin-bottom: 8.4%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 .formulario {
     display: flex;
@@ -214,33 +214,67 @@ button:hover{
     width: 200px;
     height: 200px;
 }
-.rodape {
+.rodape{
+    background-color: rgb(68, 171, 219);
+    color: white;
+    font-size: 130%;
+    text-align: center;
+}
+.img_rodape{
     display: flex;
     justify-content: center;
-    width: 100%;
-    background-color: rgb(68, 171, 219);
-    color: black;
-    font-size: 150%;
+    gap: 30px; /*Define o espaço entre os elementos da div*/
+    padding: .5%;
 }
-/*Alterações no css são feitas quando chegam no width 900px*/
-@media screen and (max-width: 900px) {
-    .formulario {
-        border-radius: 0px 50px 50px 0;
-    }
-    .input {
-        width: 30vw;
-    }
+#text_rodape{
+    padding: 1%;
 }
+
 /*Alterações no css são feitas quando chegam no width 560px*/
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
     #busca {
         width: 60vw;
     }
-    .container {
+    #barra{
+        margin-bottom: 2.5%;
+    }
+    #menu a {
+        font-size: 130%;
+    }
+    #menu:hover {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         flex-wrap: wrap;
+        background-color: rgb(68, 171, 219);
+        transition: 1s;
+        width: 95%;
+        height: 80px;
+    }
+    #Doencas {
+        margin-left: 8%;
+        margin-right: 1%;
+    }
+    #cvv {
+        padding: 2%;
+        font-size: 130%;
+    }
+    #quem_somos{
+        padding: 2%;
+        font-size: 130%;
     }
     .formulario {
         background-color: transparent;
+        width: 80vw;
+    }
+    .input{
+        width: 70vw;
+    }
+    button{
+        width: 50vw;
+    }
+    #logar{
+        width: 50vh;
     }
     legend {
         font-size: 5vw;
@@ -248,6 +282,9 @@ button:hover{
     .img {
         /*Esconde a div img*/
         display: none;
+    }
+    .footer p{
+        margin: 1%;
     }
 }
 
