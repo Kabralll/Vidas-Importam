@@ -29,6 +29,7 @@ body {
     border: none;
     font-family: "Inter", sans-serif;
     text-indent: 1.5%;
+    outline: none;
 }
 .pesquisa {
     display: flex;
