@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #e2e2e2;
+    background-image: url("../img/plano_fundo.jpg");
+    background-size: cover;
     font-family: "Inter", sans-serif;
 }
 .cabecalho {
@@ -18,9 +19,13 @@ body {
     width: 100%;
     padding: 1%;
     background-color: rgb(115, 201, 241);
+    border-radius: 100px;
+    margin-top: 1%;
+    opacity: 70%;
 }
 #logo {
-    font-size: xx-large;
+    max-width: 8%;
+    opacity: 200%;
 }
 #busca {
     border-radius: 15px;
@@ -79,14 +84,6 @@ body {
     row-gap: 20px;
     flex-basis: 100%;
 }
-ul li {
-    list-style: none;
-}
-ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-}
 #menu {
     display: flex;
     justify-content: space-around;
@@ -94,7 +91,7 @@ ul li a {
     background-color: rgb(68, 171, 219);
     width: 100px;
     height: 50px;
-    overflow: hidden; /*Esconde as palavras do menu*/
+    overflow: hidden;
     border-radius: 100px;
 }
 #menu a {
@@ -107,6 +104,14 @@ ul li a {
     background-color: rgb(68, 171, 219);
     transition: 1s;
     width: 575px;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
 }
 #Doencas {
     margin-left: 20px;
@@ -263,17 +268,22 @@ ul li a {
 }
 
 /*<--------------------------------------------------->*/
+
 .rodape{
     background-color: rgb(68, 171, 219);
     color: white;
-    font-size: 130%;
+    font-size: 100%;
     text-align: center;
+    opacity: 70%;
 }
 .img_rodape{
     display: flex;
     justify-content: center;
     gap: 30px; /*Define o espaço entre os elementos da div*/
-    padding: .5%;
+    width: 100%;
+}
+.img_rodape img{
+    width: 2.5%;
 }
 #text_rodape{
     padding: 1%;
@@ -288,8 +298,18 @@ ul li a {
         overflow: auto;
         /* que controla como o conteúdo que excede os limites de um container é tratado.Quando essa propriedade é definida qualquer conteúdo que ultrapassa a borda do container será ocultado e não ficará visível. */
     }
-    #busca{
-        width: 60vw;
+    .cabecalho{
+        margin-top: 0px;
+        border-radius: 0px;
+    }
+    #logo{
+        max-width: 35%;
+    }
+    #procurar{
+        display: none;
+    }
+    #home_button{
+        margin-right: 50%;
     }
     .barra{
         margin-bottom: 2.5%;
