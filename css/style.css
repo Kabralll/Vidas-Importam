@@ -56,7 +56,7 @@ body {
 }
 #login {
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 10px;
     align-items: center;
     text-decoration: none;
     font-size: x-large;
@@ -307,10 +307,7 @@ ul li a {
     }
     #procurar{
         display: none;
-    }
-    #home_button{
-        margin-right: 50%;
-    }
+    } 
     .barra{
         margin-bottom: 2.5%;
     }
@@ -367,5 +364,8 @@ ul li a {
 /*<--------------------------------------------------->*/
     .footer p{
         margin: 1%;
+    }
+    .img_rodape img{
+        width: 6%;
     }
 }
