@@ -29,3 +29,40 @@ input.addEventListener('input', (event) => { //Se algo for digitado na barra o v
     }
 
 });
+
+function carConteudo(){
+    let listaDoencas = document.getElementById('links'); // Obtém a lista de doenças
+    let botao = document.getElementById('botao_doencas');//Criando uma variavel pra mexer no botão
+    let menu = document.getElementById('menu'); // criando a variavel que pega o id do menu
+
+    if (listaDoencas.style.display === "none") {
+        listaDoencas.style.display = "flex";
+
+        if(innerWidth<600){ //media screen pra js
+            
+            botao.style.fontSize = "110%";
+            listaDoencas.style.display = "flex";
+            listaDoencas.style.listStyle = "none";
+            listaDoencas.style.alignContent = "stretch"
+            listaDoencas.style.justifyContent = "center";
+            listaDoencas.style.flexDirection = "row";
+            listaDoencas.style.flexWrap = "wrap";
+            menu.style.width = "95%";
+            menu.style.height = "80px";
+            menu.style.transition = "1s";
+        }
+
+        else{
+            menu.style.width = "575px";
+            menu.style.transition = "1s";  // Torna visível
+        }
+
+    } else {
+        listaDoencas.style.display = "none"; // Torna invisível
+        
+        menu.style.transition = "1s";
+        menu.style.width = "100px"; // Altera a largura
+        menu.style.height = "50px";
+
+    }
+}
