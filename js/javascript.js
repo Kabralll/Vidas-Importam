@@ -33,6 +33,7 @@ input.addEventListener('input', (event) => { //Se algo for digitado na barra o v
 function carConteudo(){
     let listaDoencas = document.getElementById('links'); // Obtém a lista de doenças
     let botao = document.getElementById('botao_doencas');//Criando uma variavel pra mexer no botão
+    const doenca_individual = document.querySelectorAll('#nome_doenca'); //como sao varios elementos com o mesmo id temos que usar o querySelectorAll
     let menu = document.getElementById('menu'); // criando a variavel que pega o id do menu
 
     if (listaDoencas.style.display === "none") {
@@ -40,6 +41,10 @@ function carConteudo(){
 
         if(innerWidth<600){ //media screen pra js
             
+            doenca_individual.forEach((doenca_individual) => { //isso aqui faz que para cada elemento com o id doenca_individual o código será executado
+                doenca_individual.style.fontSize = "130%";
+            })
+
             botao.style.fontSize = "110%";
             listaDoencas.style.display = "flex";
             listaDoencas.style.listStyle = "none";
@@ -48,7 +53,7 @@ function carConteudo(){
             listaDoencas.style.flexDirection = "row";
             listaDoencas.style.flexWrap = "wrap";
             menu.style.width = "95%";
-            menu.style.height = "80px";
+            menu.style.height = "100px";
             menu.style.transition = "1s";
         }
 
