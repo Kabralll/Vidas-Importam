@@ -228,6 +228,9 @@ ul li a {
     height: 5vh;
     width: 40vw;
 }
+input[type=number]::-webkit-inner-spin-button { /*Isso aqui aplica a propriedade a todos inputs type number*/
+    margin-right: 3%;
+  }
 .login_botao {
     border: none;
     border-radius: 10px;
