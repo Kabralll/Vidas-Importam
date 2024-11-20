@@ -45,7 +45,7 @@
             <form class="formulario">
                 <legend class="criar_conta">Criar Conta</legend>
                 <input class="input" type="text" name="nome" id="nome" placeholder="Nome..."><br>
-                <input class="input" type="number" min = "0" max = "105" name="idade" id="idade" placeholder="Idade..."><br>
+                <input class="input" type="number" min = "0" max = "99" name="idade" onKeyDown="if(this.value.length==2) return false;" id="idade" placeholder="Idade..."><br>  <!--Esse onKeyDown="if(this.value.length==2) return false;" funciona como um js, se o numero digitado pelo usuario tiver mais que 2 digitos ele não deixa o usuario digitar.-->
                 <input class="input" type="email" name="email" id="email" placeholder="Email..."><br>
                 <input class="input" type="text" name="usuario" id="usuario" placeholder="Usuário..."><br>
                 <input class="input" type="password" name="senha" id="senha" placeholder="Senha..."><br>
