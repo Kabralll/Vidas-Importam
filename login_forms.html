@@ -5,45 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/heart.jpg" type="image/icon type">
-        <script>
-            function validarForms() {
-    // Impede o envio do formulário, caso o botão tenha o tipo submit
-
-    let confirmacao = document.querySelector('.confirmacao'); //porque nao tem id e sim uma class
-    let cabecalho = document.querySelector('.cabecalho');
-    let forms = document.querySelector('.centralizar');
-    let rodape = document.querySelector('.rodape');
-
-    var nome = document.getElementById("nome").value;
-    var idade = document.getElementById("idade").value;
-    var email = document.getElementById("email").value;
-    var usuario = document.getElementById("usuario").value;
-    var senha = document.getElementById("senha").value;
-    var tamanho_senha = senha.length;
-
-    // Validação da senha
-    if((nome === "")||(idade === "")||(email === "")||(usuario === "")||(senha === "")){
-        return false
-    }
-    else{
-
-        cabecalho.style.filter = "blur(30px)";
-        forms.style.filter = "blur(30px)";
-        rodape.style.filter = "blur(30px)";
-        
-        // Preenche os dados na confirmação
-        document.getElementById('valid_nome').innerHTML = nome;
-        document.getElementById('valid_idade').innerHTML = idade;
-        document.getElementById('valid_email').innerHTML = email;
-        document.getElementById('valid_username').innerHTML = usuario;
-        document.getElementById('valid_senha').innerHTML = senha;
-
-        // Exibe a tela de confirmação
-        confirmacao.style.display = "block";
-        
-    }
-}
-        </script>
+        <script src="js/javascript.js"></script>
         <title>Vidas Importam</title>
     </head>
     <body class="corpo">
@@ -90,7 +52,7 @@
                 <input class="input" type="email" name="email" id="email" placeholder="Email..." required ><br>
                 <input class="input" type="text" name="usuario" id="usuario" placeholder="Usuário..." required ><br>
                 <input class="input" type="password" name="senha" id="senha" placeholder="Senha..." required ><br>
-                <button class="login_botao" type="type" OnClick="validarForms()">Login</button> <br>            
+                <button class="login_botao" type="submit" OnClick="validarForms()">Login</button> <br>            
                 <p id="logar">Você já tem uma conta? &nbsp;<a href="http://">Logar</a></p>
             </form>
             <div class="img">
