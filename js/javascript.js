@@ -88,24 +88,26 @@ function validarForms() {
     var tamanho_senha = senha.length;
 
     // Validação da senha
-    if (tamanho_senha < 8) {
-        window.alert("A senha deve conter no mínimo 8 caracteres...");
-        return false;
+    if((nome === "")||(idade === "")||(email === "")||(usuario === "")||(senha === "")){
+        return false
     }
+    else{
 
-    cabecalho.style.filter = "blur(30px)";
-    forms.style.filter = "blur(30px)";
-    rodape.style.filter = "blur(30px)";
-    
-    // Preenche os dados na confirmação
-    document.getElementById('valid_nome').innerHTML = nome;
-    document.getElementById('valid_idade').innerHTML = idade;
-    document.getElementById('valid_email').innerHTML = email;
-    document.getElementById('valid_username').innerHTML = usuario;
-    document.getElementById('valid_senha').innerHTML = senha;
+        cabecalho.style.filter = "blur(30px)";
+        forms.style.filter = "blur(30px)";
+        rodape.style.filter = "blur(30px)";
+        
+        // Preenche os dados na confirmação
+        document.getElementById('valid_nome').innerHTML = nome;
+        document.getElementById('valid_idade').innerHTML = idade;
+        document.getElementById('valid_email').innerHTML = email;
+        document.getElementById('valid_username').innerHTML = usuario;
+        document.getElementById('valid_senha').innerHTML = senha;
 
-    // Exibe a tela de confirmação
-    confirmacao.style.display = "block";
+        // Exibe a tela de confirmação
+        confirmacao.style.display = "block";
+        
+    }
 }
 
 function botao_nao() {
