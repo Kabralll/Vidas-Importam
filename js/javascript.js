@@ -79,6 +79,7 @@ function validarForms() {
     let cabecalho = document.querySelector('.cabecalho');
     let forms = document.querySelector('.centralizar');
     let rodape = document.querySelector('.rodape');
+
     var nome = document.getElementById("nome").value;
     var idade = document.getElementById("idade").value;
     var email = document.getElementById("email").value;
