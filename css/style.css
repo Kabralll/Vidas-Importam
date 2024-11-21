@@ -25,7 +25,6 @@ body {
 }
 #logo {
     max-width: 8%;
-    opacity: 200%;
 }
 #busca {
     border-radius: 15px;
@@ -280,6 +279,62 @@ input[type=number]::-webkit-inner-spin-button { /*Isso aqui aplica a propriedade
     height: 200px;
 }
 
+/*<------Confirmação de login------->*/
+
+.centralizar2{
+    display: flex;
+    justify-content: center;
+}
+.confirmacao{
+    background-color: rgb(115, 201, 241);
+    width: 45%;
+    height: 57%;
+    border-radius: 20px;
+    position: fixed; /*Isso deixa a tela fixa na tela mesmo que o usuario role ela*/
+    top: 25%; /*Isso aqui deixa a div centralizada exatamente no meio da tela*/
+    z-index: 1000;
+}
+#confirm_titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+    font-size: 180%;
+}
+.confirmacao ul li{
+    list-style: none;
+    margin: 2%;
+    background-color: white;
+    padding: 2.5%;
+    border-radius: 10px;
+}
+.confirm_botoes{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+#confirm_nao{
+    border: none;
+    width: 20vw;
+    height: 5vh;
+    font-size: 160%;
+    border-radius: 10px;
+    transition: .5s;
+}
+#confirm_nao:hover{
+    background-color: rgb(204, 204, 204);
+}
+#confirm_sim{
+    border: none;
+    width: 20vw;
+    height: 5vh;
+    font-size: 160%;
+    border-radius: 10px;
+    transition: .5s;
+}
+#confirm_sim:hover{
+    background-color: rgb(204, 204, 204);
+}
+
 /*<--------------------------------------------------->*/
 
 .rodape{
@@ -368,6 +423,20 @@ input[type=number]::-webkit-inner-spin-button { /*Isso aqui aplica a propriedade
     .img {
         /*Esconde a div img*/
         display: none;
+    }
+    .confirmacao{
+        width: 95%;
+    }
+    #confirm_titulo{
+        margin: 2%;
+    }
+    #confirm_nao{
+        margin-top: 2%;
+        width: 40vw;
+    }
+    #confirm_sim{
+        margin-top: 2%;
+        width: 40vw;
     }
 /*<--------------------------------------------------->*/
     .footer p{

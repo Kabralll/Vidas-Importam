@@ -71,3 +71,62 @@ function carConteudo(){
 
     }
 }
+
+function validarForms() {
+    // Impede o envio do formulário, caso o botão tenha o tipo submit
+
+    let confirmacao = document.querySelector('.confirmacao'); //porque nao tem id e sim uma class
+    let cabecalho = document.querySelector('.cabecalho');
+    let forms = document.querySelector('.centralizar');
+    let rodape = document.querySelector('.rodape');
+    var nome = document.getElementById("nome").value;
+    var idade = document.getElementById("idade").value;
+    var email = document.getElementById("email").value;
+    var usuario = document.getElementById("usuario").value;
+    var senha = document.getElementById("senha").value;
+    var tamanho_senha = senha.length;
+
+    // Validação da senha
+    if (tamanho_senha < 8) {
+        window.alert("A senha deve conter no mínimo 8 caracteres...");
+        return false;
+    }
+
+    cabecalho.style.filter = "blur(30px)";
+    forms.style.filter = "blur(30px)";
+    rodape.style.filter = "blur(30px)";
+    
+    // Preenche os dados na confirmação
+    document.getElementById('valid_nome').innerHTML = nome;
+    document.getElementById('valid_idade').innerHTML = idade;
+    document.getElementById('valid_email').innerHTML = email;
+    document.getElementById('valid_username').innerHTML = usuario;
+    document.getElementById('valid_senha').innerHTML = senha;
+
+    // Exibe a tela de confirmação
+    confirmacao.style.display = "block";
+}
+
+function botao_nao() {
+    let confirmacao = document.querySelector('.confirmacao');
+    let cabecalho = document.querySelector('.cabecalho');
+    let forms = document.querySelector('.centralizar');
+    let rodape = document.querySelector('.rodape');
+    
+    confirmacao.style.display = "none";
+    cabecalho.style.filter = "blur(0px)";
+    forms.style.filter = "blur(0px)";
+    rodape.style.filter = "blur(0px)";
+}
+
+function botao_sim(){
+    let confirmacao = document.querySelector('.confirmacao');
+    let cabecalho = document.querySelector('.cabecalho');
+    let forms = document.querySelector('.centralizar');
+    let rodape = document.querySelector('.rodape');
+    
+    confirmacao.style.display = "none";
+    cabecalho.style.filter = "blur(0px)";
+    forms.style.filter = "blur(0px)";
+    rodape.style.filter = "blur(0px)";
+}
