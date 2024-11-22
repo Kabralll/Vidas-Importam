@@ -85,11 +85,10 @@ function validarForms() {
     var email = document.getElementById("email").value;
     var usuario = document.getElementById("usuario").value;
     var senha = document.getElementById("senha").value;
-    var tamanho_senha = senha.length;
 
     // Validação da senha
     if((nome === "")||(idade === "")||(email === "")||(usuario === "")||(senha === "")){
-        return false
+        return false;
     }
     else{
 
@@ -105,7 +104,7 @@ function validarForms() {
         document.getElementById('valid_senha').innerHTML = senha;
 
         // Exibe a tela de confirmação
-        confirmacao.style.display = "block";
+        confirmacao.style.visibility = "visible"; //torna a validação visivel
         
     }
 }
