@@ -285,10 +285,10 @@ input[type=number]::-webkit-inner-spin-button { /*Isso aqui aplica a propriedade
     display: flex;
     justify-content: center;
 }
-.confirmacao{
+.confirmacao {
     background-color: rgb(115, 201, 241);
     width: 45%;
-    height: 62%;
+    height: 60%;
     border-radius: 20px;
     position: fixed; /*Isso deixa a tela fixa na tela mesmo que o usuario role ela*/
     top: 25%; /*Isso aqui deixa a div centralizada exatamente no meio da tela*/
@@ -334,6 +334,38 @@ input[type=number]::-webkit-inner-spin-button { /*Isso aqui aplica a propriedade
 #confirm_sim:hover{
     background-color: rgb(204, 204, 204);
 }
+.obrigado_login{
+    background-color: rgb(115, 201, 241);
+    width: 45%;
+    height: 25%;
+    border-radius: 20px;
+    position: fixed; /*Isso deixa a tela fixa na tela mesmo que o usuario role ela*/
+    top: 25%; /*Isso aqui deixa a div centralizada exatamente no meio da tela*/
+    z-index: 1000;
+    margin-top: 5%;
+}
+#text_obrigado_login{
+    font-size: 160%;
+    margin: 2%;
+    text-align: center;
+}
+.confirm_botoes_obrigado{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+#confirm_nao_obrigado{
+    border: none;
+    width: 30vw;
+    height: 5vh;
+    font-size: 160%;
+    border-radius: 10px;
+    transition: .5s;
+}
+#confirm_nao_obrigado:hover{
+    background-color: rgb(204, 204, 204);
+}
+
 
 /*<--------------------------------------------------->*/
 
@@ -437,6 +469,11 @@ input[type=number]::-webkit-inner-spin-button { /*Isso aqui aplica a propriedade
     #confirm_sim{
         margin-top: 2%;
         width: 40vw;
+    }
+    .obrigado_login{
+        width: 95%;
+        height: 40%;
+        text-align: center;
     }
 /*<--------------------------------------------------->*/
     .footer p{

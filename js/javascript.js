@@ -114,8 +114,10 @@ function botao_nao() {
     let cabecalho = document.querySelector('.cabecalho');
     let forms = document.querySelector('.centralizar');
     let rodape = document.querySelector('.rodape');
-    
-    confirmacao.style.display = "none";
+    let obrigado_login = document.querySelector('.obrigado_login');
+
+    confirmacao.style.visibility = "hidden";
+    obrigado_login.style.visibility = "hidden";
     cabecalho.style.filter = "blur(0px)";
     forms.style.filter = "blur(0px)";
     rodape.style.filter = "blur(0px)";
@@ -123,12 +125,8 @@ function botao_nao() {
 
 function botao_sim(){
     let confirmacao = document.querySelector('.confirmacao');
-    let cabecalho = document.querySelector('.cabecalho');
-    let forms = document.querySelector('.centralizar');
-    let rodape = document.querySelector('.rodape');
+    let obrigado_login = document.querySelector('.obrigado_login');
     
-    confirmacao.style.display = "none";
-    cabecalho.style.filter = "blur(0px)";
-    forms.style.filter = "blur(0px)";
-    rodape.style.filter = "blur(0px)";
+    confirmacao.style.visibility = "hidden";
+    obrigado_login.style.visibility = "visible";
 }
